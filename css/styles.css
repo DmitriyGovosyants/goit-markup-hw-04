@@ -8,6 +8,7 @@
   --text-secondary-color: #212121;
   --text-tertiary-color: #ffffff;
   --accent-color: #2196f3;
+  --button-primary-color: #afb1b8;
 
   --background-primary: #ffffff;
   --background-secondary: #2f303a;
@@ -79,7 +80,7 @@ img {
   padding-bottom: 0;
 }
 
-.teams-section {
+.team-section {
   background-color: var(--background-tertiary);
 }
 
@@ -210,9 +211,6 @@ img {
 }
 
 .overlay {
-  /* margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px; */
   height: 600px;
   background-color: var(--background-secondary);
   background-image: linear-gradient(
@@ -278,7 +276,7 @@ img {
   margin-left: 30px;
 }
 
-.icon-feactures {
+.icon-features {
   margin-bottom: 30px;
 }
 
@@ -299,37 +297,72 @@ img {
   margin-left: 30px;
 }
 
-.teams {
+.team {
   display: flex;
 
   font-size: 16px;
   text-align: center;
 }
 
-.teams-item {
+.team-item {
   background-color: var(--background-primary);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.teams-item + .teams-item {
+.team-item + .team-item {
   margin-left: 30px;
 }
 
-.teams-inner {
+.team-inner {
   padding-top: 30px;
+  padding-left: 32px;
   padding-bottom: 30px;
+  padding-right: 32px;
 }
 
-.teams-title {
+.team-title {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   color: var(--title-secondary-color);
 }
 
-.teams-text {
-  margin-top: 10px;
+.team-text {
+  margin-bottom: 16px;
+}
+
+.team-socials {
+  display: flex;
+}
+
+.team-socials-item + .team-socials-item {
+  margin-left: 10px;
+}
+
+.team-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--background-primary);
+  color: var(--button-primary-color);
+}
+
+.team-socials-link:hover,
+.team-socials-link:focus {
+  background-color: var(--accent-color);
+  color: var(--background-primary);
+}
+
+.team-socials-icon {
+  fill: currentColor;
 }
 
 /* Content portfolio ---------------------------------------------------------*/
