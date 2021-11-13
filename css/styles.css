@@ -153,9 +153,12 @@ img {
   margin-left: auto;
 }
 
-.nav-item + .nav-item,
-.contacts-item + .contacts-item {
+.nav-item + .nav-item {
   margin-left: 50px;
+}
+
+.contacts-item + .contacts-item {
+  margin-left: 30px;
 }
 
 .nav-link,
@@ -166,6 +169,9 @@ img {
 }
 
 .nav-link {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   color: var(--text-secondary-color);
 }
 
@@ -174,6 +180,11 @@ img {
 }
 
 .contacts-link {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   color: inherit;
 }
 
@@ -182,6 +193,11 @@ img {
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
+}
+
+.icon-contacts {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Content studio ---------------------------------------------------------------------*/
@@ -252,30 +268,6 @@ img {
   font-size: 14px;
 }
 
-.features-item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-}
-
-.satelite-dish-icon::before {
-  background-image: url('../images/features-1.svg');
-}
-
-.punctuality-icon::before {
-  background-image: url('../images/features-2.svg');
-}
-
-.plan-icon::before {
-  background-image: url('../images/features-3.svg');
-}
-
-.astronaut-icon::before {
-  background-image: url('../images/features-4.svg');
-}
-
 .features-item {
   width: calc((100% - 90px) / 4);
 
@@ -284,6 +276,10 @@ img {
 
 .features-item + .features-item {
   margin-left: 30px;
+}
+
+.icon-feactures {
+  margin-bottom: 30px;
 }
 
 .features-title {
